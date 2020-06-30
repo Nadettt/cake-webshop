@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login page</title>
-    <link rel="stylesheet" href="css/font-roboto" />
+
     <link rel="stylesheet" href="styleCandied.css" />
   </head>
   <body>
@@ -18,34 +18,35 @@
       </div>
 
       <h3 class="title">Login</h3>
+      <form>
+        <div class="emailBar">
+          <input
+            type="email"
+            name="email"
+            required
+            class="email"
+            placeholder="E-mail*"
+          />
+        </div>
 
-      <div class="emailBar">
-        <input
-          type="email"
-          name="email"
-          required
-          class="email"
-          placeholder="E-mail*"
-        />
-      </div>
+        <div class="pwdBar">
+          <i class="fas fa-eye"></i>
+          <input
+            type="password"
+            name="pwd"
+            required
+            class="pwd"
+            placeholder="Password*"
+          />
+        </div>
+        <div class="btn1">
+          <button class="mainBtn" type="button">Login</button>
+        </div>
 
-      <div class="pwdBar">
-        <input
-          type="password"
-          name="pwd"
-          required
-          class="pwd"
-          placeholder="Password*"
-        />
-      </div>
-
-      <div class="btn1">
-        <button class="mainBtn" type="button">Login</button>
-      </div>
-
-      <div class="loginLink">
-        <p>Forgot your password? <a href="">Reset</a></p>
-      </div>
+        <div class="loginLink">
+          <p>Forgot your password? <a href="">Reset</a></p>
+        </div>
+      </form>
     </div>
   </body>
 </html>
