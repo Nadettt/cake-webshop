@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  padding: 20px;
+  font-family: "Roboto-Thin.ttf", sans-serif;
+  color: #a46bac;
+  font-weight: lighter;
+  overflow: hidden;
+  background-image: url("img/main1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-content: space-around;
+}
+
+nav > i:nth-child(2) {
+  margin-left: auto;
+}
+
+.contentContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*Title*/
+.title {
+  font-family: "Roboto-Thin.ttf", sans-serif;
+  color: #a46bac;
+  font-weight: lighter;
+  padding: 20px 0px 0 60px;
+}
+
+/*LOGOS*/
+.logoHeart {
+  padding: 100px 0px 30px 0px;
+}
+
+.logo {
+  padding: 0 45px;
+}
+
+/*Name input box*/
+.nameBar {
+  position: relative;
+  margin-top: 80px;
+}
+.fullName {
+  width: 30%;
+  border: none;
+  font-size: 12px;
+  padding: 8px 13px;
+  border-radius: 20px;
+  border: 1px solid #f0eafa;
+  text-decoration-color: #a46bac;
+}
+
+/*Email input box*/
+.emailBar {
+  position: relative;
+  margin-top: 15px;
+}
+.email {
+  width: 30%;
+  border: none;
+  font-size: 12px;
+  padding: 8px 13px;
+  border-radius: 20px;
+  border: 1px solid #f0eafa;
+}
+
+/*Password input box*/
+.pwdBar {
+  position: relative;
+  margin-top: 15px;
+}
+.pwd {
+  width: 30%;
+  border: none;
+  font-size: 12px;
+  padding: 8px 13px;
+  border-radius: 20px;
+  border: 1px solid #f0eafa;
+}
+
+/*----MAIN Button----(on signup page)*/
+.mainBtn {
+  border: 0;
+  line-height: 2;
+  padding: 0 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 2px 5px #48948f;
+  border-radius: 20px;
+  background-color: #62c3bc;
+  box-shadow: inset 1px 1px 2px #acf1ec, inset -1px -1px 5px #4da09a,
+    1px 1px 5px #a9a7a7;
+}
+.mainBtn:hover {
+  background-color: #91ddd8;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 2px #cfeeeb, inset -1px -1px 5px #cfeeeb;
+}
+.btn1 {
+  padding: 120px 20px 10px 20px;
+}
+
+/*----Login page BUTTONS-----*/
+/*Button-Login-landing page*/
+.loginBtn {
+  border: none;
+  background-color: inherit;
+  padding: 0px 5px 3px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #a46bac;
+}
+.loginBtn:hover {
+  text-shadow: 1px 2px 5px #a46bac;
+}
+.btn2 {
+  padding: 10px 0px 10px 70px;
+}
+
+/*Login link*/
+.loginLink {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-size: 12px;
+}
+a {
+  color: #a46bac;
+}
+a:hover {
+  text-shadow: 1px 2px 5px #a46bac;
+  text-decoration: underline;
+}
+
+/*--FORMS--*/
+
+/*--Photo background buttons - Home page--*/
+.button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 180px;
+  height: 90px;
+  text-align: center;
+  top: 300px;
+  left: 400px;
+  position: inherit;
+  font-family: "Roboto-Thin.ttf", sans-serif;
+  font-size: 18px;
+  display: block;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: inset 1px 1px 2px #94c0bd, inset -1px -1px 5px #4da09a,
+    1px 1px 5px #a9a7a7;
+}
+.button:hover {
+  transition-duration: 0.3s;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 2px #e1f1f1, inset -1px -1px 5px #e1f1f1;
+}
+.cakeBtn {
+  background: url(img/cake.png);
+  background-size: cover;
+}
+.chocBtn {
+  background: url(img/chocolate.png);
+  background-size: cover;
+}
+.pieBtn {
+  background: url(img/pie.png);
+  background-size: cover;
+}
+.pastryBtn {
+  background: url(img/pastry.png);
+  background-size: cover;
+}
+
+/*----Responsivity-----*/
+/*@media all and (min-width: 900px) {
+  .logo {
+    width: 10px;
+  }
+}*/
