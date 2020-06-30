@@ -14,22 +14,24 @@
   <nav>
     <i class="fas fa-bars"></i>
     <i class="fas fa-user"></i>
-    <i class="fas fa-shopping-basket"></i>
+    <a href="basketpg.html"><i class="fas fa-shopping-basket"></i></a>
   </nav>
   <div class="contentContainer">
     <div class="logo">
       <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
     </div>
+  </div>
 
-    <h3 class="title"><button class="btnArrow"><i class="fas fa-angle-left"></i></button>Cakes</h3>
+  <div class=titleArrowContainer>
+      <button class="btnArrow"><i class="fas fa-angle-left"></i>
+      </button>
+    <div class="title-container">
+      <h3>Cakes</h3>
+    </div>
+  </div>
     
-
     <main>
       <section id="cakes"></section>
-      <section id="chocolate"></section>
-      <section id="pies"></section>
-      <section id="pastry"></section>
-      <section id="other"></section>
     </main>
 
     <template id="myTemplate">
@@ -40,10 +42,10 @@
             <p id="category">Category</p>
             <p id="name">Name</p>
             <p id="price">Price</p>
+            <button class="btnBasket"><i class="fas fa-shopping-basket"></i></button>
+        <button class="btnBasket"><i class="fas fa-info"></i></button>
           </div>
         </div>
-        <button class="btnBasket"><i class="fas fa-shopping-basket"></i></button>
-        <button class="btnBasket"><i class="fas fa-heart"></i></button>
       </article>
     </template>
     <script src="products.js"></script>

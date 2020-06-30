@@ -10,11 +10,10 @@ body {
 	font-family: sans-serif;
 	color: #a46bac;
 	font-weight: lighter;
-	overflow: hidden;
 	background-image: url("img/main1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	max-width: 900px;
+	max-width: 400px;
 	margin: 0 auto;
 }
 
@@ -42,13 +41,16 @@ nav > i:nth-child(2) {
 }
 
 /*Title*/
-.title {
+.title-container {
 	font-family: "Roboto-Thin.ttf", sans-serif;
 	color: #a46bac;
 	font-weight: lighter;
 	text-align: center;
 	margin: 15px auto;
-	margin-bottom: 30px;
+}
+.titleArrowContainer {
+	display: flex;
+	align-items: center;
 }
 
 /*LOGOS*/
@@ -71,6 +73,7 @@ nav > i:nth-child(2) {
 	border-radius: 20px;
 	border: 1px solid #f0eafa;
 	text-decoration-color: #a46bac;
+	width: 100%;
 }
 
 /*Email input box*/
@@ -83,6 +86,7 @@ nav > i:nth-child(2) {
 	padding: 8px 13px;
 	border-radius: 20px;
 	border: 1px solid #f0eafa;
+	width: 100%;
 }
 
 /*Password input box*/
@@ -95,6 +99,7 @@ nav > i:nth-child(2) {
 	padding: 8px 13px;
 	border-radius: 20px;
 	border: 1px solid #f0eafa;
+	width: 100%;
 }
 div.pwdBar i.fas {
 	position: absolute;
@@ -118,6 +123,7 @@ div.pwdBar i.fas {
 	border-radius: 20px;
 	background-color: #62c3bc;
 	box-shadow: inset 1px 1px 2px #acf1ec, inset -1px -1px 5px #4da09a, 1px 1px 5px #a9a7a7;
+	width: 80%;
 }
 .mainBtn:hover {
 	background-color: #91ddd8;
@@ -129,13 +135,14 @@ div.pwdBar i.fas {
 	display: block;
 	margin: 15px auto;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 30px;
 
 	/*padding: 120px 20px 10px 20px;*/
 }
 
-/*----Login page BUTTONS-----*/
-/*Button-Login-landing page*/
+/*----Login page BUTTONS & POSITION-----*/
+
+/*Button-Login page*/
 .loginBtn {
 	border: none;
 	background-color: inherit;
@@ -156,6 +163,7 @@ div.pwdBar i.fas {
 /*Login link*/
 .loginLink {
 	font-size: 12px;
+	text-align: center;
 }
 a {
 	color: #a46bac;
@@ -165,11 +173,43 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*--FORMS--*/
+/*---FORMS---*/
 form {
 	text-align: center;
 	margin: 0 auto;
 	width: 250px;
+}
+/*Checkout form*/
+
+.firstNameBar,
+.lastNameBar,
+.cardNumber,
+.cardInfoBars,
+.yearBar,
+.codeBar {
+	margin-top: 15px;
+}
+.firstName,
+.lastName,
+.number,
+.month,
+.year,
+.code {
+	border: none;
+	font-size: 12px;
+	padding: 8px 13px;
+	border-radius: 20px;
+	border: 1px solid #f0eafa;
+	width: 100%;
+}
+.nameBars {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.cardInfoBars {
+	display: flex;
+	flex-direction: row;
 }
 
 /*--Buttons--*/
@@ -238,14 +278,15 @@ form {
 	font-family: "Roboto-Thin.ttf", sans-serif;
 	font-size: 25px;
 	border-radius: 60px;
-	margin: 15px auto;
 	box-shadow: #f1dbf5;
 }
 .btnArrow:hover {
 	transition-duration: 0.3s;
 	cursor: pointer;
 }
-.btnBasket {
+.btnBasket,
+.btnMinus,
+.btnPlus {
 	padding: 0;
 	border: 0;
 	width: 35px;
@@ -259,17 +300,23 @@ form {
 	margin: 15px auto;
 	box-shadow: inset 1px 1px 2px #94c0bd, inset -1px -1px 5px #4da09a, 1px 1px 5px #94c0bd;
 }
-.btnBasket:hover {
+.btnBasket,
+.btnMinus,
+.btnPlus:hover {
 	transition-duration: 0.3s;
 	cursor: pointer;
 	box-shadow: inset 1px 1px 2px #e1f1f1, inset -1px -1px 5px #e1f1f1;
 }
 
-/*----Product page-DATABASE-----*/
+/*----Cakes page- w/JS-DATABASE-----*/
 main > section {
 	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: left;
+}
+
+article {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 10px 0 0 50px;
 }
 
 .imgProd {
@@ -287,15 +334,26 @@ main > section {
 
 /*----Dropdown Menu----*/
 .dropdown {
-	/*display: none;*/
 	background-color: #f4f0f5;
 	width: 280px;
 	height: 500px;
 	box-shadow: 0px 6px 16px 0px #f1dbf5;
-	align-content: center;
 	border-radius: 10px;
 	padding: 20px 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	padding: 10px;
 }
+.show {
+	display: flex;
+	flex-direction: column;
+}
+.hide {
+	display: none;
+}
+
 #myDropdown {
 	display: flex;
 	flex-direction: column;
@@ -313,7 +371,7 @@ main > section {
 	border: 0;
 	background-color: transparent;
 	color: #a46bac;
-	text-align: center;
+	text-align: left;
 	font-family: "Roboto-Thin.ttf", sans-serif;
 	font-size: 25px;
 }
@@ -337,19 +395,11 @@ div.search i.fas {
 	font-size: 12px;
 }
 
-/*----Single product page----*/
-.container-custom {
-	margin: auto;
-	width: 50%;
-	border: 3px #a46bac;
-	padding: auto;
-}
+/*----Single product page CUSTOM----*/
 .container-custom img {
-	max-width: 100%;
-	max-height: 100%;
-	margin: none;
-	display: block;
+	max-width: 400px;
 	border-radius: 20px;
+	width: 100%;
 }
 .container-custom button {
 	position: absolute;
@@ -363,12 +413,65 @@ div.search i.fas {
 .container-custom button:hover {
 	background-color: #d3bbd6;
 }
-
-/*---Custom page---*/
 .choice-container {
 	display: grid;
-	grid-column: repeat (2, 2fr);
+	grid-template-columns: repeat(2, 2fr);
+	max-width: 400px;
+}
+.choice-container label {
+	font-weight: bold;
+}
+button.btnFb {
+	display: block;
+	margin: 0 0 0 auto;
+}
+
+/*---Basket page---*/
+.prodContainer {
+	display: block;
+}
+.checkoutImg {
+	max-width: 100px;
+	max-height: 80px;
+	border-radius: 10px;
+}
+.addedProd {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.addedProd h4 {
+	margin-left: -40px;
+	margin-top: 10px;
+}
+.btnPM {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: -30px;
+}
+.btnMinus,
+.btnPlus {
+	margin: 0 10px;
+}
+.priceLine {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.priceBox {
+	padding-top: 190px;
+}
+
+/*---Checkout page---*/
+.paymentCont {
+	margin: 10px 50px;
+}
+.paymentCont p {
+	margin-left: 10px;
+	margin-bottom: 10px;
 }
 /*----Responsivity-----*/
-@media all and (min-width: 900px) {
-}
+/*@media all and (min-width: 900px) {
+}*/

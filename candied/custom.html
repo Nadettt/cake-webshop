@@ -20,77 +20,65 @@
     <div class="logo">
       <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
     </div>
-
-    <h3 class="title"><button class="btnArrow"><i class="fas fa-angle-left"></i></button>Custom cakes</h3>
+        <div class="title-container">
+            <button class="btnArrow"><i class="fas fa-angle-left"></i>
+            </button><h3>Custom cakes</h3>
+        </div>    
     -->
     <div class=container-custom>
-    <button class="btnArrow"><i class="fas fa-angle-left"></i></button>
+    <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
     <img src="img-singleproduct/custom-single.jpg" alt="cutting board with ingredients and baking ustensils" />
     </div>
 
     <div class="content">
         <h3>Hello there <i class="fas fa-hand-sparkles"></i></h3>
         <p>Looking for a delicious cake for a birthday party or special event? You came to the right place. Book a meeting with us and find your perfect centerpiece to complete your celebration. Choose from a wide variety of designs, flavour and diet options.</p><br>
-        <p>You can start customizing some of your preferences below:</p>
+        <p>Start with the basics:</p>
         <div class="choice-container">
             <div>
-                <h4>Event type</h4>
-                <input type="checkbox" id="event1" name="event1" value="Event">
-                <label for="event1"> Birthday</label><br>
-                <input type="checkbox" id="event2" name="event2" value="Event">
-                <label for="event2"> Wedding</label><br>
-                <input type="checkbox" id="event3" name="event3" value="Event">
-                <label for="event3"> Baby shower</label><br>
-                <input type="checkbox" id="event4" name="event4" value="Event">
-                <label for="event4"> Company event</label><br>
-                <input type="checkbox" id="event5" name="event5" value="Event">
-                <label for="event5"> Other</label><br>
+                <label for="event">Choose event:</label>
+                <select name="event" id="event">
+                    <option value="birthday">Birthday</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="babyShower">Baby shower</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
             <div>
-                <h4>Style</h4>
-                <input type="checkbox" id="style1" name="style1" value="Style">
-                <label for="style1"> Traditional</label><br>
-                <input type="checkbox" id="style2" name="style2" value="Style">
-                <label for="style2"> Rustic</label><br>
-                <input type="checkbox" id="style3" name="style3" value="Style">
-                <label for="style3"> Futuristic</label><br>
-                <input type="checkbox" id="style4" name="style4" value="Style">
-                <label for="style4"> Themed</label><br>
-                <input type="checkbox" id="style5" name="style5" value="Style">
-                <label for="style5"> Other</label><br>
+                <label for="style">Choose style:</label>
+                <select name="style" id="style">
+                    <option value="traditional">Traditional</option>
+                    <option value="modern">Modern</option>
+                    <option value="theme">Theme</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
             <div>
-                <h4>Flavour</h4>
-                <input type="checkbox" id="flavour1" name="flavour1" value="Flavour">
-                <label for="flavour1"> Chocolate</label><br>
-                <input type="checkbox" id="flavour2" name="flavour2" value="Flavour">
-                <label for="flavour2"> Red velvet</label><br>
-                <input type="checkbox" id="flavour3" name="flavour3" value="Flavour">
-                <label for="flavour3"> Sugar and spice</label><br>
-                <input type="checkbox" id="flavour4" name="flavour4" value="Flavour">
-                <label for="flavour4"> Fruit</label><br>
-                <input type="checkbox" id="flavour5" name="flavour5" value="Flavour">
-                <label for="flavour5"> Other</label><br>
+                <label for="flavour">Choose flavour:</label>
+                <select name="flavour" id="flavour">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="sugarSpice">Sugar & spice</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
             <div>
-                <h4>Diet</h4>
-                <input type="checkbox" id="diet1" name="diet1" value="Diet">
-                <label for="diet2"> Regular</label><br>
-                <input type="checkbox" id="diet2" name="diet2" value="Diet">
-                <label for="diet2"> Gluten free</label><br>
-                <input type="checkbox" id="diet3" name="diet3" value="Diet">
-                <label for="diet3"> Dairy free</label><br>
-                <input type="checkbox" id="diet4" name="diet4" value="Diet">
-                <label for="diet4"> Vegan</label><br>
-                <input type="checkbox" id="diet5" name="diet5" value="Diet">
-                <label for="diet5"> Other</label><br>
+                <label for="diet">Diet type:</label>
+                <select name="diet" id="diet">
+                    <option value="regular">Regular</option>
+                    <option value="gluten">Gluten free</option>
+                    <option value="dairy">Dairy free</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
         </div>
     </div>
 </div>
 
+    <button class="btnFb"><i class="fas fa-shopping-basket"></i></button>
     <div class="btn1">
-        <button class="mainBtn" type="button">Login</button>
+        <button class="mainBtn" type="button">Submit</button>
     </div>
 </body>
 </html>

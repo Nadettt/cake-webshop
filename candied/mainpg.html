@@ -12,13 +12,13 @@
 
 <body>     
     <nav>
-      <button onclick="myFunction()" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
+      <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
       <i class="fas fa-user"></i>
-      <i class="fas fa-shopping-basket"></i>
+      <a href="basketpg.html"> <i class="fas fa-shopping-basket"></i></a>
     </nav>
     
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn-cross"><i class="fas fa-times"></i></button>
+    <div class="dropdown hide">
+      <button id="crossBtn" class="dropbtn-cross"><i class="fas fa-times"></i></button>
     
       <div id="myDropdown">
         <h3>Menu</h3><br>
@@ -46,11 +46,11 @@
     <div class="logo">
       <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
     </div>
-
-    <h3 class="title">Main</h3>
-
+    <div class="title-container">
+      <h3 class="title">Main</h3>
+    </div>
     <div>
-      <button class="button cakeBtn">Cakes</button>
+      <button class="button cakeBtn" onclick="window.location.href = 'cakespg.html';">Cakes</button>
       <button class="button chocBtn">Chocolate</button>
       <button class="button pieBtn">Pies</button>
       <button class="button pastryBtn">Pastry</button>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+
+  <link rel="stylesheet" href="styleCandied.css" />
+  <script src="https://kit.fontawesome.com/307166ba24.js" ;crossorigin="anonymous" ;></script>
+</head>
+
+<body>
+  <nav>
+   <i class="fas fa-bars"></i>
+    <i class="fas fa-user"></i>
+   <i class="fas fa-shopping-basket"></i>
+  </nav>
+    <div class="contentContainer">
+        <div class="logo">
+            <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
+        </div>
+    </div>    
+
+        <div class=titleArrowContainer>
+            <button class="btnArrow"><i class="fas fa-angle-left"></i></button>
+            <div class="title-container">
+                <h3>Checkout</h3>
+            </div>
+        </div>    
+        
+            <div class="paymentCont">
+                <p>Payment method:</p>
+                    <img src="img-checkout/visa.png" alt="visa card logo" style="width: 80px;"/>
+                    <img src="img-checkout/vipps.png" alt="vipps logo" style="width: 80px;"/>
+                    <img src="img-checkout/klarna.png" alt="klarna logo" style="width: 80px;"/>
+            </div>
+    
+        <form class="checkoutForm">
+           <div class="nameBars">
+                <div class="firstNameBar">
+                    <input
+                    type="firstName"
+                    name="firstName"
+                    required
+                    class="firstName"
+                    placeholder="First name*"
+                    />
+                </div>  
+                <div class="lastNameBar">  
+                    <input
+                    type="lastName"
+                    name="lastName"
+                    required
+                    class="lastName"
+                    placeholder="Last name*"
+                    />
+                </div>
+            </div>      
+            
+            <div class="cardNumber">
+              <input
+                type="number"
+                name="number"
+                required
+                class="number"
+                placeholder="0000 0000 0000 0000*"
+              />
+            </div>
+
+            <div class="cardInfoBars">
+                <div class="monthBar">
+                    <input
+                    type="number"
+                    name="month"
+                    required
+                    class="month"
+                    placeholder="xx*"
+                    />
+                </div>  
+                <div class="yearBar">  
+                    <input
+                    type="number"
+                    name="year"
+                    required
+                    class="year"
+                    placeholder="xxxx*"
+                    />
+                </div>
+                <div class="codeBar">  
+                    <input
+                    type="number"
+                    name="code"
+                    required
+                    class="code"
+                    placeholder="xxx*"
+                    />
+                </div>
+            </div>      
+        </form>    
+
+    <div class="btn1">
+        <button class="mainBtn" type="button">Pay 0000 nok</button>
+      </div>
+      
+  </body>
+</html>

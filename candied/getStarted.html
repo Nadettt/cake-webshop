@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-    <title>Login page</title>
+    <title>Signup page</title>
 
     <link rel="stylesheet" href="styleCandied.css" />
   </head>
@@ -17,11 +16,21 @@
           style="width: 150px;"
         />
       </div>
-    
+
         <div class="title-container">
-          <h3 class="title">Login</h3>
+          <h3 class="title">Get started</h3>
         </div>
       <form>
+        <div class="nameBar">
+          <input
+            type="text"
+            name="fullName"
+            required
+            class="fullName"
+            placeholder="Full name*"
+          />
+        </div>
+
         <div class="emailBar">
           <input
             type="email"
@@ -42,15 +51,15 @@
             placeholder="Password*"
           />
         </div>
-     
-        <div class="btn1">
-          <button class="mainBtn" type="button" onclick="window.location.href = 'mainpg.html';">Login</button>
-        </div>
-        <div class="loginLink">
-          <p>Forgot your password? <a href="">Reset</a></p>
-        </div>
       
-      </form>
+          <div class="btn1">
+            <button class="mainBtn" type="button" onclick="window.location.href = 'mainpg.html';">Create account</button>
+          </div>
+          <div class="loginLink">
+            <p>Already have an account? <a href="loginpg.html">Login</a></p>
+          </div>
+        
+        </form> 
     </div>
   </body>
 </html>
