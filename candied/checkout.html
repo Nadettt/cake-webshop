@@ -12,16 +12,42 @@
 
 <body>
     <nav>
-        <i class="fas fa-bars"></i>
+        <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
         <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 130px;" />
         <i class="fas fa-user"></i>
-        <i class="fas fa-shopping-basket"></i>
+        <a href="basketpg.html"><i class="fas fa-shopping-basket"></i><img src="img/one-item.png" alt="one item in basket" style="margin: -10px;"/></a>
     </nav>
   
     <div class="title">
         <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
         <h3>Checkout</h3>
     </div>
+
+    <div class="dropdown hide">
+        <button id="crossBtn" class="dropbtn-cross"><i class="fas fa-times"></i></button>
+      
+        <div id="myDropdown">
+          <h3>Menu</h3><br>
+            <div class="search">
+              <i class="fas fa-search"></i>
+              <input
+                type="search"
+                name="search"
+                required
+                class="search"
+                placeholder="Search"
+              />
+            </div><br>
+            <div class="menu-options">
+              <a href="aboutUs.html">Contact</a>
+              <a href="#">Profile</a>
+              <a href="#">Book a meeting</a>
+              <a href="#">Recipes<i class="fas fa-wrench"></i></a>
+              <a href="#">Other<i class="fas fa-chevron-down"></i></a>
+            </div>
+          </div>
+          <a class="logOut" href="index.html">Log out</a>
+        </div>
         
             <div class="paymentCont">
                 <p>Payment method:</p>
@@ -114,5 +140,6 @@
         <button class="mainBtn" type="button">Pay 1200 nok</button>
       </div>
       
+      <script src="dropdown.js"></script>
   </body>
 </html>

@@ -30,7 +30,9 @@ nav > i:nth-child(3) {
 nav > img {
 	padding-left: 15px;
 }
-
+img#logo-nav {
+	padding: 3px 0 0 15px;
+}
 .dropbtn-bars {
 	padding: 0;
 	border: 0;
@@ -356,17 +358,19 @@ article {
 
 /*----Dropdown Menu----*/
 .dropdown {
-	background-color: #f4f0f5;
+	background-color: #f9f8fa;
+	background-image: url(img/dropmenuBG.png);
 	width: 280px;
 	height: 500px;
-	box-shadow: 0px 6px 16px 0px #f1dbf5;
+	box-shadow: 0px 6px 10px 0px #cecdce;
 	border-radius: 10px;
-	padding: 20px 20px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 10px;
 	padding: 10px;
+}
+div#myDropdown {
+	padding-top: 35px;
 }
 .show {
 	display: flex;
@@ -375,11 +379,12 @@ article {
 .hide {
 	display: none;
 }
-
-#myDropdown {
+.menu-options {
 	display: flex;
 	flex-direction: column;
-	padding: 10px 0;
+	align-content: flex-start;
+	align-items: center;
+	justify-content: space-between;
 }
 #myDropdown h3 {
 	text-align: center;
@@ -389,7 +394,7 @@ article {
 	text-decoration: none;
 }
 .dropbtn-cross {
-	padding: 0;
+	padding: 1px 0 0 10px;
 	border: 0;
 	background-color: transparent;
 	color: #a46bac;
@@ -407,14 +412,20 @@ input.search {
 	border-radius: 20px;
 	display: flex;
 	margin: auto;
-	width: 100%;
+	width: 90%;
 }
 div.search i.fas {
 	position: absolute;
-	margin-top: 10px;
-	margin-left: 210px;
+	margin-top: 11px;
+	margin-left: 220px;
 	color: #afafaf;
 	font-size: 12px;
+	color: #a46bac;
+}
+a.logOut {
+	align-self: center;
+	padding: 80px;
+	text-decoration: none;
 }
 
 /*----Custom page ----*/
@@ -526,9 +537,9 @@ button.btnFb {
 	padding: 20px 30px 30px 30px;
 }
 /*---About page---*/
-body.about-us {
+/*body.about-us {
 	background-image: url("img/background-nav.png");
-}
+}*/
 p.about-text {
 	padding-bottom: 10px;
 }
