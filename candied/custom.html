@@ -11,29 +11,18 @@
 </head>
 
 <body>
- <!-- <nav>
-    <i class="fas fa-bars"></i>
-    <i class="fas fa-user"></i>
-    <i class="fas fa-shopping-basket"></i>
-  </nav>
-  <div class="contentContainer">
-    <div class="logo">
-      <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
-    </div>
-        <div class="title-container">
-            <button class="btnArrow"><i class="fas fa-angle-left"></i>
-            </button><h3>Custom cakes</h3>
-        </div>    
-    -->
+ 
     <div class=container-custom>
     <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
     <img src="img-singleproduct/custom-single.jpg" alt="cutting board with ingredients and baking ustensils" />
     </div>
+    <button class="btnFb"><i class="fas fa-shopping-basket"></i></button>
 
     <div class="content">
-        <h3>Hello there <i class="fas fa-hand-sparkles"></i></h3>
-        <p>Looking for a delicious cake for a birthday party or special event? You came to the right place. Book a meeting with us and find your perfect centerpiece to complete your celebration. Choose from a wide variety of designs, flavour and diet options.</p><br>
-        <p>Start with the basics:</p>
+        <h3 class="custom">Hello there <i class="fas fa-hand-sparkles"></i></h3>
+        <p>Looking for a delicious cake for a special event? You came to the right place. Book a meeting with us and find your perfect centerpiece for your celebration. Choose from a wide variety of designs, flavour and diet options.</p>
+    </div>    
+        <h3 class="custom">Start here:</h3>
         <div class="choice-container">
             <div>
                 <label for="event">Choose event:</label>
@@ -44,7 +33,7 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div>
+        <!--    <div>
                 <label for="style">Choose style:</label>
                 <select name="style" id="style">
                     <option value="traditional">Traditional</option>
@@ -52,7 +41,7 @@
                     <option value="theme">Theme</option>
                     <option value="other">Other</option>
                 </select>
-            </div>
+            </div>-->
             <div>
                 <label for="flavour">Choose flavour:</label>
                 <select name="flavour" id="flavour">
@@ -63,7 +52,7 @@
                 </select>
             </div>
             <div>
-                <label for="diet">Diet type:</label>
+                <label for="diet">Diet type:</label><br>
                 <select name="diet" id="diet">
                     <option value="regular">Regular</option>
                     <option value="gluten">Gluten free</option>
@@ -73,12 +62,7 @@
                 </select>
             </div>
         </div>
-    </div>
 </div>
-
-    <button class="btnFb"><i class="fas fa-shopping-basket"></i></button>
-    <div class="btn1">
-        <button class="mainBtn" type="button">Submit</button>
-    </div>
+    
 </body>
 </html>

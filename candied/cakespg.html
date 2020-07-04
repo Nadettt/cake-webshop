@@ -12,22 +12,39 @@
 
 <body>
   <nav>
-    <i class="fas fa-bars"></i>
+    <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
+    <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 130px;" />
     <i class="fas fa-user"></i>
     <a href="basketpg.html"><i class="fas fa-shopping-basket"></i></a>
-  </nav>
-  <div class="contentContainer">
-    <div class="logo">
-      <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
-    </div>
-  </div>
+</nav>
 
-  <div class=titleArrowContainer>
-      <button class="btnArrow"><i class="fas fa-angle-left"></i>
-      </button>
-    <div class="title-container">
-      <h3>Cakes</h3>
+<div class="title">
+    <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
+    <h3>Cakes</h3>
+</div>
+
+<div class="dropdown hide">
+  <button id="crossBtn" class="dropbtn-cross"><i class="fas fa-times"></i></button>
+
+  <div id="myDropdown">
+    <h3>Menu</h3><br>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input
+          type="search"
+          name="search"
+          required
+          class="search"
+          placeholder="Search"
+        />
+      </div><br>
+    <a href="#">Contact</a>
+    <a href="#">Profile</a>
+    <a href="#">Book a meeting</a>
+    <a href="#">Recipes<i class="fas fa-wrench"></i></a>
+    <a href="#">Other<i class="fas fa-chevron-down"></i></a>
     </div>
+    <a class="logOut" href="#">Log out</a>
   </div>
     
     <main>
@@ -43,14 +60,14 @@
             <p id="name">Name</p>
             <p id="price">Price</p>
             <button class="btnBasket"><i class="fas fa-shopping-basket"></i></button>
-        <button class="btnBasket"><i class="fas fa-info"></i></button>
+            <button class="btnBasket"><i class="fas fa-info"></i></button>
           </div>
         </div>
       </article>
     </template>
-    <script src="products.js"></script>
-
     
+    <script src="products.js"></script>
+    <script src="dropdown.js"></script>
 </body>
 
 </html>

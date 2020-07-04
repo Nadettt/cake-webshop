@@ -11,23 +11,17 @@
 </head>
 
 <body>
-  <nav>
-   <i class="fas fa-bars"></i>
-    <i class="fas fa-user"></i>
-   <i class="fas fa-shopping-basket"></i>
-  </nav>
-    <div class="contentContainer">
-        <div class="logo">
-            <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
-        </div>
-    </div>    
-
-        <div class=titleArrowContainer>
-            <button class="btnArrow"><i class="fas fa-angle-left"></i></button>
-            <div class="title-container">
-                <h3>Checkout</h3>
-            </div>
-        </div>    
+    <nav>
+        <i class="fas fa-bars"></i>
+        <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 130px;" />
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-basket"></i>
+    </nav>
+  
+    <div class="title">
+        <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
+        <h3>Checkout</h3>
+    </div>
         
             <div class="paymentCont">
                 <p>Payment method:</p>
@@ -35,7 +29,7 @@
                     <img src="img-checkout/vipps.png" alt="vipps logo" style="width: 80px;"/>
                     <img src="img-checkout/klarna.png" alt="klarna logo" style="width: 80px;"/>
             </div>
-    
+            <hr class="divLine-basketpg">
         <form class="checkoutForm">
            <div class="nameBars">
                 <div class="firstNameBar">
@@ -98,9 +92,26 @@
                 </div>
             </div>      
         </form>    
+        <hr class="divLine-basketpg">
+        <div class="checkout-options">
+            <div class="gift">
+                <i class="fas fa-gift" style="color: #62C3BC; font-size: 30px;"></i>
+                <input type="checkbox">
+                <label class="container">00 nok
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="delivery">
+                <i class="fas fa-truck" style="color: #62C3BC; font-size: 30px;"></i>
+                <input type="checkbox">
+                <label class="container">00 nok
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+        </div>
 
     <div class="btn1">
-        <button class="mainBtn" type="button">Pay 0000 nok</button>
+        <button class="mainBtn" type="button">Pay 1200 nok</button>
       </div>
       
   </body>

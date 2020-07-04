@@ -4,18 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Main page</title>
 
   <link rel="stylesheet" href="styleCandied.css" />
   <script src="https://kit.fontawesome.com/307166ba24.js" ;crossorigin="anonymous" ;></script>
 </head>
 
-<body>     
+<body>   
     <nav>
       <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
+      <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 130px;" />
       <i class="fas fa-user"></i>
-      <a href="basketpg.html"> <i class="fas fa-shopping-basket"></i></a>
+      <a href="basketpg.html"><i class="fas fa-shopping-basket"></i></a>
     </nav>
+
+    <div class="title">
+      <button class="btnArrow"><i class="fas fa-angle-left"></i></button>
+      <h3>Home</h3>
+    </div>
     
     <div class="dropdown hide">
       <button id="crossBtn" class="dropbtn-cross"><i class="fas fa-times"></i></button>
@@ -40,21 +46,13 @@
         </div>
         <a class="logOut" href="#">Log out</a>
       </div>
-    
-  
-  <div class="contentContainer">
-    <div class="logo">
-      <img src="img/logo-2.png" alt="illustrative candied logo" style="width: 150px;" />
-    </div>
-    <div class="title-container">
-      <h3 class="title">Main</h3>
-    </div>
-    <div>
-      <button class="button cakeBtn" onclick="window.location.href = 'cakespg.html';">Cakes</button>
-      <button class="button chocBtn">Chocolate</button>
-      <button class="button pieBtn">Pies</button>
-      <button class="button pastryBtn">Pastry</button>
-    </div>
+      
+      <div>
+        <button class="button cakeBtn" onclick="window.location.href = 'cakespg.html';">Cakes</button>
+        <button class="button chocBtn"><img src="img/cooking.png" alt="" style="width: 50px;"/></button>
+        <button class="button pieBtn"><img src="img/cooking.png" alt="" style="width: 50px;"/></button>
+        <button class="button pastryBtn"><img src="img/cooking.png" alt="" style="width: 50px;"/></button>
+      </div>
   </div>
   <button class="btnFb"><i class="fab fa-facebook-messenger"></i></button>
 

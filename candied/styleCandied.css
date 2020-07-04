@@ -72,6 +72,12 @@ nav > img {
 	display: block;
 	margin: 15px auto;
 }
+img.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: 70px;
+	width: 50%;
+}
 
 /*Name input box*/
 .fullName {
@@ -143,8 +149,6 @@ div.pwdBar i.fas {
 	display: block;
 	margin: 15px auto;
 	text-align: center;
-	padding-top: 30px;
-
 	/*padding: 120px 20px 10px 20px;*/
 }
 
@@ -186,6 +190,7 @@ form {
 	text-align: center;
 	margin: 0 auto;
 	width: 250px;
+	padding-bottom: 30px;
 }
 /*Checkout form*/
 
@@ -193,6 +198,7 @@ form {
 .lastNameBar,
 .cardNumber,
 .cardInfoBars,
+.monthBar,
 .yearBar,
 .codeBar {
 	margin-top: 15px;
@@ -206,7 +212,7 @@ form {
 	border: none;
 	font-size: 12px;
 	padding: 8px 13px;
-	border-radius: 20px;
+	border-radius: 10px;
 	border: 1px solid #f0eafa;
 	width: 100%;
 }
@@ -249,14 +255,17 @@ form {
 .chocBtn {
 	background: url(img/chocolate.png);
 	background-size: cover;
+	opacity: 50%;
 }
 .pieBtn {
 	background: url(img/pie.png);
 	background-size: cover;
+	opacity: 50%;
 }
 .pastryBtn {
 	background: url(img/pastry.png);
 	background-size: cover;
+	opacity: 50%;
 }
 .btnFb {
 	padding: 0;
@@ -275,6 +284,10 @@ form {
 	cursor: pointer;
 	box-shadow: inset 1px 1px 2px #e1f1f1, inset -1px -1px 5px #e1f1f1;
 }
+button.btnFb {
+	display: block;
+	margin: 0 0 0 auto;
+}
 .btnArrow {
 	padding: 0;
 	border: 0;
@@ -291,6 +304,7 @@ form {
 .btnArrow:hover {
 	transition-duration: 0.3s;
 	cursor: pointer;
+	text-shadow: mediumorchid;
 }
 .btnBasket,
 .btnMinus,
@@ -313,7 +327,7 @@ form {
 .btnPlus:hover {
 	transition-duration: 0.3s;
 	cursor: pointer;
-	box-shadow: inset 1px 1px 2px #e1f1f1, inset -1px -1px 5px #e1f1f1;
+	box-shadow: rgb(10, 15, 13);
 }
 
 /*----Cakes page- w/JS-DATABASE-----*/
@@ -403,11 +417,13 @@ div.search i.fas {
 	font-size: 12px;
 }
 
-/*----Single product page CUSTOM----*/
+/*----Custom page ----*/
 .container-custom img {
-	max-width: 400px;
 	border-radius: 20px;
 	width: 100%;
+}
+div.container-custom {
+	margin: 15px auto;
 }
 .container-custom button {
 	position: absolute;
@@ -421,17 +437,31 @@ div.search i.fas {
 .container-custom button:hover {
 	background-color: #d3bbd6;
 }
+h3.custom {
+	margin: 20px 0 10px 0;
+}
 .choice-container {
 	display: grid;
-	grid-template-columns: repeat(2, 2fr);
-	max-width: 400px;
+	grid-template-columns: repeat(3, 1fr);
 }
 .choice-container label {
-	font-weight: bold;
+	font-weight: 18px;
+}
+select#event,
+select#flavour,
+select#diet {
+	font-size: 12px;
+	color: #a46bac;
+	padding: 5px 10px;
+	border-radius: 20px;
+	border: 1px solid #f0eafa;
+	width: 90%;
+	margin: 5px 0 15px 0;
 }
 button.btnFb {
 	display: block;
-	margin: 0 0 0 auto;
+	margin: -50px 320px;
+	position: fixed;
 }
 
 /*---Basket page---*/
@@ -439,7 +469,6 @@ button.btnFb {
 	display: block;
 }
 .checkoutImg {
-	max-width: 100px;
 	max-height: 80px;
 	border-radius: 10px;
 }
@@ -447,10 +476,11 @@ button.btnFb {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	padding-top: 20px;
 }
 .addedProd h4 {
-	margin-left: -40px;
 	margin-top: 10px;
+	margin-right: 40px;
 }
 .btnPM {
 	display: flex;
@@ -458,6 +488,7 @@ button.btnFb {
 	align-items: center;
 	justify-content: flex-end;
 	margin-top: -30px;
+	max-width: 90%;
 }
 .btnMinus,
 .btnPlus {
@@ -466,10 +497,19 @@ button.btnFb {
 .priceLine {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin: 0 35px;
 }
 .priceBox {
 	padding-top: 190px;
+}
+.divLine-basketpg {
+	border: 1.5px solid #d2b0d6;
+	opacity: 50%;
+	border-radius: 10px;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;
 }
 
 /*---Checkout page---*/
@@ -479,6 +519,11 @@ button.btnFb {
 .paymentCont p {
 	margin-left: 10px;
 	margin-bottom: 10px;
+}
+.checkout-options {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 30px 30px 30px;
 }
 /*---About page---*/
 body.about-us {
