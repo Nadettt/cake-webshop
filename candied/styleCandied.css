@@ -125,7 +125,7 @@ div.pwdBar i.fas {
 	font-size: 12px;
 }
 
-/*----MAIN Button----(on signup page)*/
+/*----Button----(on signup page)*/
 .mainBtn {
 	border: 0;
 	line-height: 2;
@@ -575,6 +575,66 @@ div.signupBtn {
 }
 button.mainBtn.signup {
 	width: 40%;
+}
+/*---Profile page---*/
+.image-placeholder {
+	background-color: #eee;
+	display: flex;
+	height: 130px;
+	margin: 15px;
+	width: 130px;
+}
+.image-placeholder > h4 {
+	align-self: center;
+	text-align: center;
+	width: 100%;
+	margin-top: 0;
+}
+.profile-placeholder {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-self: center;
+}
+.info-placeholder {
+	margin-top: 25px;
+	margin-left: 15px;
+}
+.fa-calendar-alt,
+.fa-gifts {
+	margin-right: 15px;
+}
+.meetings {
+	margin: 25px 0 25px 0;
+}
+.meeting-placeholder {
+	background-color: #e2c2e5;
+	display: flex;
+	align-self: center;
+	height: 30px;
+	margin: 10px auto;
+	width: 300px;
+	border-radius: 10px;
+	text-align: center;
+}
+.meeting-placeholder > p {
+	width: 100%;
+	margin: 5px;
+}
+.fa-pen-square:before {
+	margin-left: 50px;
+}
+.stamp-text {
+	margin: 15px auto;
+	text-align: center;
+}
+.profileBtn {
+	margin: 15px auto;
+	display: block;
+	text-align: center;
+	padding-top: 100px;
+}
+button.mainBtn.profile {
+	width: 50%;
 }
 
 /*----Responsivity-----*/

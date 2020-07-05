@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="styleCandied.css" />
+  <script src="https://kit.fontawesome.com/307166ba24.js" ;crossorigin="anonymous" ;></script>
+</head>
+
+<body class="about-us">
+    <nav>
+        <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
+       <a href="mainpg.html"><img src="img/logo-2.png" alt="illustrative candied logo" id="logo-nav" style="width: 130px;"/></a>
+        <i class="fas fa-user-edit"></i>
+        <a href="basketpg.html"><i class="fas fa-shopping-basket"></i></a>
+    </nav>
+  
+    <div class="title">
+        <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
+        <h3>Profile</h3>
+    </div>
+
+    <div class="dropdown hide">
+        <button id="crossBtn" class="dropbtn-cross"><i class="fas fa-times"></i></button>
+      
+        <div id="myDropdown">
+          <h3>Menu</h3><br>
+            <div class="search">
+              <i class="fas fa-search"></i>
+              <input
+                type="search"
+                name="search"
+                required
+                class="search"
+                placeholder="Search"
+              />
+            </div><br>
+            <div class="menu-options">
+              <a href="aboutUs.html">Contact</a>
+              <a href="#">Profile</a>
+              <a href="#">Book a meeting</a>
+              <a href="#">Recipes<i class="fas fa-wrench"></i></a>
+              <a href="#">Other<i class="fas fa-chevron-down"></i></a>
+            </div>
+          </div>
+          <a class="logOut" href="index.html">Log out</a>
+        </div>
+    <div class="profile-placeholder">   
+        <div class="image-placeholder">
+            <h4>Upload photo</h4>
+        </div>
+        <div class="info-placeholder">
+            <p style="font-weight: bold;">Full name</p>
+            <p style="margin-top: 15px;">email@email.com</p>
+            <p>+47 00 00 00 00</p>
+            <p>Candy street</p>
+            <p>1234 Candyland</p>
+        </div>
+    </div> 
+        <div class="meetings">
+            <p style="font-weight: bold;"><i class="fas fa-calendar-alt"></i>Booked meetings</p>
+            <div class="meeting-placeholder">
+                <p>Monday 21 February 2021<i class="fas fa-pen-square"></i></p>  
+            </div>
+            <div class="meeting-placeholder">
+                <p>Monday 13 June 2021<i class="fas fa-pen-square"></i></p>  
+            </div>
+        </div> 
+        <p style="font-weight: bold;"><i class="fas fa-gifts"></i>Reward points</p>
+        <p class="stamp-text">Collect 6 stamps & get a surprise</p>
+        <div class="profileBtn">
+            <button class="mainBtn profile" type="button">Update profile</button>
+          </div>
+       
+        <script src="dropdown.js"></script>
+    </body>
+    </html>
