@@ -13,7 +13,7 @@
 <body>
   <nav>
     <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
-    <a href="mainpg.html"><img src="img/logo-2.png" alt="illustrative candied logo" style="width: 130px;" /></a>
+    <a href="mainpg.html"><img src="img/logo-2.png" alt="illustrative candied logo" id="logo-nav" style="width: 130px;" /></a>
     <a href="profile.html"><i class="fas fa-user"></i></a>
     <a href="basketpg.html"><i class="fas fa-shopping-basket"></i></a>
 </nav>
@@ -40,8 +40,8 @@
       </div><br>
       <div class="menu-options">
         <a href="aboutUs.html">Contact</a>
-        <a href="#">Profile</a>
-        <a href="#">Book a meeting</a>
+        <a href="profile.html">Profile</a>
+        <a href="bookingpg.html">Book a meeting</a>
         <a href="#">Recipes<i class="fas fa-wrench"></i></a>
         <a href="#">Other<i class="fas fa-chevron-down"></i></a>
       </div>
@@ -61,15 +61,17 @@
             <p id="category">Category</p>
             <p id="name">Name</p>
             <p id="price">Price</p>
-            <button class="btnBasket"><i class="fas fa-shopping-basket"></i></button>
+            <button onclick="snackbarCakes()" class="btnBasket"><i class="fas fa-shopping-basket"></i></button>
+            <div class="snack1" id="snackbar">Added to basket</div>
             <a id="link"><button class="btnBasket"><i class="fas fa-info"></i></button></a>
           </div>
         </div>
       </article>
     </template>
-    
+
     <script src="products.js"></script>
     <script src="dropdown.js"></script>
+    <script src="snackbarCakes.js"></script>
 </body>
 
 </html>

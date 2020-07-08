@@ -12,5 +12,3 @@ function myDropdown() {
 	dropMenu.classList.toggle('hide');
 	dropMenu.classList.toggle('show');
 }
-
-//call the function
