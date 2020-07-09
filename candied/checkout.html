@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/307166ba24.js" ;crossorigin="anonymous" ;></script>
 </head>
 
-<body>
+<body >
     <nav>
         <button id="hamburgerBtn" class="dropbtn-bars"><i class="fas fa-bars"></i></button>
         <a href="mainpg.html"><img src="img/logo-2.png" alt="illustrative candied logo" id="logo-nav" style="width: 130px;" /></a>
@@ -22,7 +22,7 @@
         <button class="btnArrow" onclick="history.go(-1)"><i class="fas fa-angle-left"></i></button>
         <h3>Checkout</h3>
     </div>
-
+<!--Dropdown menu-->
     <div class="dropdown hide">
         <button id="crossBtn" class="dropbtn-cross"><i class="fas fa-times"></i></button>
       
@@ -48,7 +48,7 @@
           </div>
           <a class="logOut" href="index.html">Log out</a>
         </div>
-        
+        <!---->
             <div class="paymentCont">
                 <p>Payment method:</p>
                     <img src="img-checkout/visa.png" alt="visa card logo" style="width: 80px;"/>
@@ -120,26 +120,71 @@
         </form>    
         <hr class="divLine-basketpg">
         <div class="checkout-options">
-            <div class="giftPopup" onclick="popup()">
+            <div onclick="openForm()">
                 <i class="fas fa-gift" style="color: #62C3BC; font-size: 30px;"></i>
                 <input type="checkbox">
                 <label class="container">00 nok
                     <span class="checkmark"></span>
                   </label>
             </div>
-            <div class="truckPopup" onclick="popup()">
+               <!-- Gift popup form --> 
+                  <div class="form-popup" id="myForm">
+                    <form class="form-container">
+                     <div class="close-gift"> 
+                      <i onclick="closeForm()" class="fas fa-times" style="color: #A776AD;" ></i>
+                      <img src="img/logo-2.png" alt="candied logo" style="width: 70px;"/>
+                    </div> 
+                      <i class="fas fa-gift" style="color: #62C3BC; font-size: 30px; margin: 10px;"></i>
+                      
+                      <input class="name gift" type="text" placeholder="Name of adressee" name="name" required>
+
+                      <input class="message gift" type="text" placeholder="Your message to the adressee" name="message" required>
+
+                      <input class="number gift" type="text" placeholder="Street address, no." name="address" required>
+                  
+                      <input class="number gift" type="text" placeholder="Postal code, city" name="code" required>
+                  
+                      <button type="button" class="mainBtn signup">Done</button>
+                    </form>
+                  </div>
+               <!---->       
+
+            <div onclick="openDelivery()">
                 <i class="fas fa-truck" style="color: #62C3BC; font-size: 30px;"></i>
                 <input type="checkbox">
                 <label class="container">00 nok
                     <span class="checkmark"></span>
                   </label>
             </div>
+            <!-- Truck popup form --> 
+            <div class="form-popup" id="truckForm">
+              <form class="form-container">
+               <div class="close-gift"> 
+                <i onclick="closeDelivery()" class="fas fa-times" style="color: #A776AD;" ></i>
+                <img src="img/logo-2.png" alt="candied logo" style="width: 70px;"/>
+              </div> 
+                <i class="fas fa-truck" style="color: #62C3BC; font-size: 30px; margin: 10px;"></i>
+                
+                <input class="name gift" type="text" placeholder="Full name" name="name" required>
+
+                <input class="number gift" type="text" placeholder="Street address, no." name="address" required>
+            
+                <input class="number gift" type="text" placeholder="Postal code, city" name="code" required>
+
+                <input class="message gift" type="text" placeholder="Other info for the driver" name="message" required>
+            
+                <button type="button" class="mainBtn signup">Done</button>
+              </form>
+            </div>
+         <!---->
         </div>
 
-    <div class="btn1">
-        <button class="mainBtn" type="button">Pay 1200 nok</button>
+    <div class="btn1 pay">
+        <button class="mainBtn" type="button" onclick="window.location.href = 'success.html';">Pay 1200 nok</button>
       </div>
       
+      <script src="truckPopup.js"></script>
+      <script src="giftPopup.js"></script>
       <script src="dropdown.js"></script>
   </body>
 </html>

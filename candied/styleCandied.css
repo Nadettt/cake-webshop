@@ -16,7 +16,10 @@ body {
 	max-width: 400px;
 	margin: 0 auto;
 }
-
+.body2 {
+	background-image: none;
+	background-color: #f9f8fa;
+}
 nav {
 	display: flex;
 	align-content: space-between;
@@ -77,6 +80,7 @@ img#logo-nav {
 .logoHeart > img {
 	display: block;
 	margin: 15px auto;
+	margin-top: 100px;
 }
 img.logo {
 	display: block;
@@ -152,10 +156,9 @@ div.pwdBar i.fas {
 	box-shadow: inset 1px 1px 2px #cfeeeb, inset -1px -1px 5px #cfeeeb;
 }
 .btn1 {
-	display: block;
 	margin: 15px auto;
+	margin-top: 200px;
 	text-align: center;
-	/*padding: 120px 20px 10px 20px;*/
 }
 
 /*----Login page BUTTONS & POSITION-----*/
@@ -317,6 +320,9 @@ input > .name,
 button.btnFb {
 	display: block;
 	margin: 0 0 0 auto;
+}
+.btnFb-box {
+	padding-top: 70px;
 }
 .btnArrow {
 	padding: 0;
@@ -634,11 +640,40 @@ button.btnFb {
 	justify-content: space-around;
 	padding: 20px 30px 30px 30px;
 }
+div.btn1.pay {
+	margin-top: 20px;
+}
+/*Gift popup form on checkout page*/
+.form-popup {
+	display: none;
+	background-color: #f9f8fa;
+	position: absolute;
+	z-index: 99;
+	bottom: 120px;
+}
+.form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.close-gift {
+	display: flex;
+	align-items: center;
+}
+input > .name.gift,
+.number.gift,
+.message.gift {
+	margin: 0 0 5px 0;
+}
+.form-container > button {
+	margin: 15px auto;
+	padding-left: 28px;
+}
 
-/*---About page---*/
-/*body.about-us {
-	background-image: url("img/background-nav.png");
-}*/
+/*---About us page---*/
 p.about-text {
 	padding-bottom: 10px;
 }
@@ -728,15 +763,26 @@ button.mainBtn.signup {
 	text-align: center;
 }
 .profileBtn {
-	margin: 15px auto;
 	display: block;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 button.mainBtn.profile {
 	width: 50%;
 }
-
+/*---Payment successful---*/
+body.success {
+	background-color: transparent;
+	background-image: none;
+	padding: 0px;
+	z-index: 1;
+}
+.successImg > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: -webkit-fill-available;
+}
 /*----Responsivity-----*/
 /*@media all and (min-width: 900px) {
 }*/

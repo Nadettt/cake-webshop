@@ -19,9 +19,9 @@ function displayProducts(products) {
 
 	clone.querySelector('button').addEventListener('click', () => {
 		popup.classList.add('show');
-		/*setTimeout(function() {
-			popup.snackbar = popup.snackbar.replace('show', '');
-		}, 3000);*/
+		setTimeout(function() {
+			popup.snackbar = popup.remove('show', '');
+		}, 3000);
 	});
 
 	if (products.gsx$category.$t === 'cakes') {
